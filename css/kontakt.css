@@ -1,0 +1,134 @@
+/* ============================================
+   KONTAKT/SALON SECTION
+   ============================================ */
+.kontakt {
+  padding: 5rem 2rem;
+  background-color: var(--background-medium);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.kontakt::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  opacity: 0.1;
+}
+
+.kontakt h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.kontakt h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0.8rem auto 0;
+}
+
+.kontakt > p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.kontakt-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.map-container {
+  flex: 1.3;
+  min-width: 320px;
+  height: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: var(--transition);
+  border: 10px solid var(--white);
+}
+
+.map-container:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.map-container iframe {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.salon-info {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.address-card, .info-note, .parking-info {
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  text-align: left;
+  width: 100%;
+  transition: var(--transition);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.address-card:hover, .parking-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.address-card i, .parking-info i, .info-note i {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-top: 0.3rem;
+}
+
+.info-note i {
+  color: #f4a261;
+}
+
+.address-card h3, .parking-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-dark);
+}
+
+.address-card p, .parking-info p, .info-note p {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.info-note {
+  background-color: #fff8e8;
+  border-left: 4px solid #f4a261;
+}

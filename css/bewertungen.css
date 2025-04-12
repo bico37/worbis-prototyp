@@ -1,0 +1,83 @@
+/* ============================================
+   KUNDENBEWERTUNGEN SECTION
+   ============================================ */
+.bewertungen {
+  padding: 7rem 2rem;
+  background-color: var(--background-medium);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bewertungen h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.bewertungen h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0.8rem auto 0;
+}
+
+.bewertungen-container {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bewertung {
+  background-color: var(--white);
+  padding: 3rem 2.5rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  max-width: 320px;
+  text-align: left;
+  position: relative;
+  transition: var(--transition);
+}
+
+.bewertung:hover {
+  transform: translateY(-10px);
+}
+
+.bewertung .quote-icon {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  opacity: 0.2;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  line-height: 1;
+}
+
+.bewertung p {
+  font-size: 1.05rem;
+  margin: 0.5rem 0 1.8rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+}
+
+.bewertung span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary-color);
+  display: block;
+  margin-top: 1.5rem;
+}
+
+/* Added CTA button to bewertungen section */
+.bewertungen-cta {
+  margin-top: 3rem;
+}

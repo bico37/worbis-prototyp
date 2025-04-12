@@ -1,0 +1,184 @@
+/* ============================================
+   UNSERE GESCHICHTE SECTION
+   ============================================ */
+.geschichte {
+  text-align: center;
+  background-color: var(--background-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.geschichte::before,
+.geschichte::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--background-medium);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.geschichte::before {
+  top: -150px;
+  left: -150px;
+}
+
+.geschichte::after {
+  bottom: -150px;
+  right: -150px;
+}
+
+.geschichte h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.geschichte h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0.8rem auto 0;
+}
+
+.geschichte > p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 5.5rem;
+  color: var(--text-light);
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   STATISTICS SECTION
+   ============================================ */
+.geschichte-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.geschichte-stats div {
+  background-color: var(--white);
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  flex: 0 0 200px;
+  box-shadow: var(--shadow);
+  transform: translateY(0);
+  transition: var(--transition);
+  margin-bottom: 1rem;
+}
+
+.geschichte-stats div:hover {
+  transform: translateY(-10px);
+}
+
+.geschichte-stats h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.geschichte-stats p {
+  font-size: 1rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+/* ============================================
+   ÜBER MARTINA SECTION
+   ============================================ */
+.ueber-martina {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ueber-martina .text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.ueber-martina .text h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+  position: relative;
+  display: inline-block;
+}
+
+.ueber-martina .text h3::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin-top: 0.8rem;
+}
+
+.ueber-martina .text p {
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.9;
+  color: var(--text-light);
+}
+
+.ueber-martina .image {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.ueber-martina .image::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-medium);
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.ueber-martina .image::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 150px;
+  height: 150px;
+  background-color: var(--primary-color);
+  opacity: 0.2;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.ueber-martina .image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.ueber-martina .image img:hover {
+  transform: scale(1.02);
+}

@@ -1,0 +1,13 @@
+/* Main stylesheet that imports all other CSS files */
+@import 'global.css';
+@import 'buttons.css';
+@import 'decorative.css';
+@import 'navigation.css';
+@import 'hero.css';
+@import 'geschichte.css';
+@import 'dienstleistungen.css';
+@import 'bewertungen.css';
+@import 'termin-buchen.css';
+@import 'kontakt.css';
+@import 'footer.css';
+@import 'responsive.css';

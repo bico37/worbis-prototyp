@@ -1,0 +1,124 @@
+/* ============================================
+   DIENSTLEISTUNGEN SECTION
+   ============================================ */
+.dienstleistungen {
+  padding: 7rem 2rem;
+  background-color: var(--background-light);
+  text-align: center;
+  position: relative;
+}
+
+.dienstleistungen h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.dienstleistungen h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0.8rem auto 0;
+}
+
+.dienstleistungen > p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 5.5rem;
+  color: var(--text-light);
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-category {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  background-color: var(--white);
+}
+
+.service-category:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.category-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--white);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.category-header h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.service-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-name {
+  font-weight: 500;
+  color: var(--text-dark);
+  text-align: left;
+}
+
+.service-price {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.service-note {
+  max-width: 600px;
+  margin: 2.5rem auto 0;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.service-note p {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}

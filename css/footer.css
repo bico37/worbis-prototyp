@@ -1,0 +1,159 @@
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background-color: #222;
+  color: #fff;
+}
+
+.footer-top {
+  padding: 60px 0 40px;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  background-color: #1a1a1a;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-column h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #f8b195;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #f8b195;
+}
+
+.footer-tagline {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.footer-column .social-icons {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #f8b195;
+  transform: translateY(-3px);
+}
+
+.footer-hours li, 
+.footer-links li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links li {
+  justify-content: flex-start;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f8b195;
+  padding-left: 5px;
+}
+
+footer address {
+  font-style: normal;
+}
+
+footer address p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+footer address i {
+  margin-right: 10px;
+  color: #f8b195;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #f8b195;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+/* ============================================
+   LOCAL SEO CONTENT STYLING
+   ============================================ */
+.local-seo-content {
+  background-color: #1a1a1a;
+  padding: 30px 0;
+  border-top: 1px solid #333;
+}
+
+.local-seo-content h4 {
+  color: #f8b195;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.local-seo-content p {
+  color: #999;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
