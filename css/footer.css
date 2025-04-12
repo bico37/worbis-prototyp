@@ -7,7 +7,7 @@ footer {
 }
 
 .footer-top {
-  padding: 60px 0 40px;
+  padding: 70px 0 50px; /* Increased padding for more spacious layout */
 }
 
 .footer-bottom {
@@ -19,16 +19,18 @@ footer {
 
 .footer-grid {
   display: grid;
+  align-items: start; /* Changed from center to align items at the top */
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 60px; /* Reduced gap for better space utilization */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4rem; /* Reduced padding to give more space for content */
 }
 
 .footer-column h4 {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* Increased margin for better spacing */
   font-size: 1.2rem;
   position: relative;
   padding-bottom: 10px;
@@ -62,7 +64,7 @@ footer {
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Align to left instead of center */
   gap: 1rem;
   margin: 2rem 0;
 }
@@ -85,21 +87,41 @@ footer {
   transform: translateY(-3px);
 }
 
-.footer-hours li, 
-.footer-links li {
-  margin-bottom: 10px;
+/* Improved footer hours styling */
+.footer-hours {
+  width: 100%;
+}
+
+.footer-hours li {
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.footer-hours li span:first-child {
+  font-weight: 500;
+  color: #e0e0e0;
+  margin-right: 15px; /* Add space between day and time */
+  min-width: 140px; /* Give minimum width to day column */
+}
+
+.footer-hours li span:last-child {
+  color: #f8b195;
 }
 
 .footer-links li {
+  margin-bottom: 12px; /* Consistent spacing with hours */
+  display: flex;
   justify-content: flex-start;
 }
 
 .footer-links a {
   color: #ccc;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, padding 0.3s;
+  padding-left: 0;
 }
 
 .footer-links a:hover {
@@ -112,14 +134,16 @@ footer address {
 }
 
 footer address p {
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Increased spacing */
   display: flex;
   align-items: center;
 }
 
 footer address i {
-  margin-right: 10px;
+  margin-right: 15px; /* Increased spacing */
   color: #f8b195;
+  min-width: 16px; /* Ensure consistent icon width */
+  text-align: center;
 }
 
 footer a {
@@ -133,7 +157,7 @@ footer a:hover {
 }
 
 .footer-bottom p {
-  margin: 5px 0;
+  margin: 8px 0; /* Increased spacing */
 }
 
 /* ============================================
@@ -141,19 +165,19 @@ footer a:hover {
    ============================================ */
 .local-seo-content {
   background-color: #1a1a1a;
-  padding: 30px 0;
+  padding: 35px 0; /* Increased padding */
   border-top: 1px solid #333;
 }
 
 .local-seo-content h4 {
   color: #f8b195;
   font-size: 1.1rem;
-  margin-bottom: 15px;
+  margin-bottom: 18px; /* Increased spacing */
 }
 
 .local-seo-content p {
   color: #999;
   font-size: 0.85rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
+  line-height: 1.6; /* Increased line height for better readability */
+  margin-bottom: 15px; /* Increased spacing */
 }

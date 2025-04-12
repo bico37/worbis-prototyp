@@ -29,7 +29,10 @@
     <!-- <link rel="canonical" href="https://www.worbis.at/"> -->
     
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Load banner.js first to ensure it creates the banner before other scripts run -->
+    <script src="./js/banner.js" defer></script>
     <script src="./js/script.js" defer></script>
+    <script src="./js/banner-helper.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon.png">
     
@@ -313,13 +316,19 @@
                 
                 <div class="opening-hours">
                     <div class="day-column">
-                        <span class="day">Montag - Freitag:</span>
+                        <span class="day">Dienstag - Mittwoch:</span>
+                        <span class="day">Donnerstag:</span>
+                        <span class="day">Freitag:</span>
                         <span class="day">Samstag:</span>
-                        <span class="day">Sonntag & Feiertage:</span>
+                        <span class="day">Sonntag - Montag:</span>
+                        <span class="day">Feiertage:</span>
                     </div>
                     <div class="hours-column">
-                        <span class="hours">9:00 - 18:00 Uhr</span>
-                        <span class="hours">9:00 - 14:00 Uhr</span>
+                        <span class="hours">08:30–18:00</span>
+                        <span class="hours">08:30–12:00</span>
+                        <span class="hours">08:30–18:00</span>
+                        <span class="hours">08:30–12:00</span>
+                        <span class="hours">Geschlossen</span>
                         <span class="hours">Geschlossen</span>
                     </div>
                 </div>
@@ -387,18 +396,19 @@
                     <div class="footer-logo">Worbis</div>
                     <p class="footer-tagline">Dein Friseursalon in Linz Ebelsberg</p>
                     <div class="social-icons">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="https://www.facebook.com/p/Salon-Worbis-100054592892524/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-column">
                     <h4>Öffnungszeiten</h4>
                     <ul class="footer-hours">
-                        <li><span>Montag - Freitag:</span> <span>9:00 - 18:00 Uhr</span></li>
-                        <li><span>Samstag:</span> <span>9:00 - 14:00 Uhr</span></li>
-                        <li><span>Sonntag & Feiertage:</span> <span>Geschlossen</span></li>
+                        <li><span>Dienstag - Mittwoch:</span> <span>08:30–18:00</span></li>
+                        <li><span>Donnerstag:</span> <span>08:30–12:00</span></li>
+                        <li><span>Freitag:</span> <span>08:30–18:00</span></li>
+                        <li><span>Samstag:</span> <span>08:30–12:00</span></li>
+                        <li><span>Sonntag - Montag:</span> <span>Geschlossen</span></li>
+                        <li><span>Feiertage:</span> <span>Geschlossen</span></li>
                     </ul>
                 </div>
                 

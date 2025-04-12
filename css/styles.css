@@ -11,3 +11,4 @@
 @import 'kontakt.css';
 @import 'footer.css';
 @import 'responsive.css';
+@import 'banner.css'; /* Missing banner CSS import */

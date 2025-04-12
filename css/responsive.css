@@ -84,7 +84,7 @@
 @media (max-width: 1100px) {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px 30px;
+    gap: 40px 60px;
   }
 }
 
@@ -94,7 +94,8 @@
   }
   
   .footer-grid {
-    gap: 30px;
+    gap: 40px; /* Increased gap for better separation */
+    padding: 0 20px; /* Reduced padding */
   }
   
   .footer-column {
@@ -105,37 +106,65 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  
+  .footer-hours li span:first-child {
+    min-width: 130px; /* Slight reduction but still maintaining readability */
+  }
 }
 
 @media (max-width: 690px) {
   .footer-grid {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: left; /* Keep text left-aligned for better readability */
+    gap: 30px; /* Less gap between stacked columns */
   }
   
   .footer-column h4::after {
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0; /* Keep the underline left-aligned */
+    transform: none;
   }
   
-  .footer-hours li, 
-  .footer-links li {
-    flex-direction: column;
+  .footer-hours li {
+    flex-direction: row; /* Keep hours in a single row */
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    gap: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: 300px; /* Max width to maintain readability */
+  }
+  
+  .footer-hours li span:first-child {
+    margin-right: 10px;
+    min-width: 120px; /* Still maintain some minimum width */
+  }
+  
+  .footer-links li {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
   }
   
   footer address p {
-    justify-content: center;
+    justify-content: flex-start; /* Left-align address */
   }
   
   .social-icons {
-    justify-content: center;
+    justify-content: flex-start; /* Left-align social icons */
   }
   
   .footer-top {
     padding: 40px 0 20px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 400px) {
+  .footer-hours li {
+    font-size: 0.9rem; /* Slightly smaller font */
+  }
+  
+  .footer-hours li span:first-child {
+    min-width: 100px; /* Reduced minimum width */
   }
 }
 

@@ -1,0 +1,118 @@
+/* ============================================
+   NOTIFICATION BANNER
+   ============================================ */
+.notification-banner {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.notification-banner.visible {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.notification-banner .banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-right: 30px;
+}
+
+.notification-banner .banner-icon {
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+
+.notification-banner .banner-text {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.notification-banner .banner-text strong {
+  font-weight: 700;
+}
+
+.notification-banner .close-banner {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.notification-banner .close-banner:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .notification-banner {
+    padding: 12px 15px;
+  }
+  
+  .notification-banner .banner-icon {
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+  
+  .notification-banner .banner-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .notification-banner .banner-content {
+    flex-direction: column;
+    text-align: center;
+    padding-right: 0;
+  }
+  
+  .notification-banner .banner-icon {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  
+  .notification-banner .close-banner {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transform: none;
+  }
+  
+  .notification-banner .banner-text {
+    margin-bottom: 5px;
+  }
+}
+
+/* Fix for sites with fixed headers */
+body.has-banner {
+  padding-top: 50px;
+}
+
+@media (max-width: 480px) {
+  body.has-banner {
+    padding-top: 80px;
+  }
+}
