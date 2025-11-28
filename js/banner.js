@@ -16,7 +16,7 @@ const NotificationBanner = {
     
     // Soll der Banner nach dem Schließen dauerhaft verschwinden oder bei jedem Seitenbesuch angezeigt werden?
     // 'true' = Banner wird nach dem Schließen nicht mehr angezeigt, 'false' = Banner wird bei jedem Seitenbesuch angezeigt
-    rememberClosed: true,
+    rememberClosed: false,
 
     createBanner: function() {
         // Prüfen, ob Banner im localStorage als geschlossen markiert wurde
