@@ -267,6 +267,7 @@
   .opening-hours {
     padding: 1.5rem;
     gap: 1rem;
+    max-width: 100%;
   }
   
   .day-column, .hours-column {
@@ -346,6 +347,12 @@
   }
   
   .call-button {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .opening-hours {
+    max-width: 100%;
     padding: 1.5rem;
   }
   
